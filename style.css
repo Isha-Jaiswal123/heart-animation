@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c2340;
+}
+.container{
+  position: relative;
+ background-image: url("img/new\ mnm.jpg");
+ height: 450px;
+ width: 350px;
+ border-radius: 12px;
+ background-size: 350px 450px;
+ background-position: center;
+ cursor: pointer;
+}
+
+.heart{
+  position:absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%,-50%);
+  color: red;
+  font-size: 30px;
+  opacity: 0;
+ 
+}
+
+.active{
+  animation: animate 0.8s linear forwards;
+}
+@keyframes animate{
+  30%{
+opacity: 1;
+font-size: 80px;
+  }
+  50%{
+    opacity: 1;
+    font-size: 60px;
+      }
+      70%{
+        opacity: 1;
+        font-size: 70px;
+          }
+          80%{
+            opacity: 1;
+            font-size: 60px;
+              }
+              90%{
+                opacity: 1;
+                font-size: 60px;
+                  }
+}
